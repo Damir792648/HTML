@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A1 Construction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+
+    .MEGAKNIGHT {
+      background-color: #0d47a1;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 80px;
+    }
+
+    .logotip {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .main a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .admin-btn {
+      background-color: #fff;
+      color: #0d47a1;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .Dream {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 80px;
+      gap: 40px;
+    }
+
+    .contact-form {
+      flex: 1;
+    }
+
+    .contact-form h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #888;
+      margin-bottom: 24px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 18px;
+      flex: 1;
+      max-width: 220px; 
+    }
+
+    .input-group label {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .input-group input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+      max-width: 1000px; 
+    }
+
+    .submit-btn {
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #0b3a86;
+    }
+
+    .image-section img {
+      width: 800px; 
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      background-color: #0b1a33;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 80px;
+      margin-top: 60px;
+    }
+
+    .footer-left h3 {
+      margin: 0 0 12px;
+    }
+
+    .social-icons img {
+      width: 20px;
+      margin-right: 15px;
+      filter: invert(1);
+    }
+
+    .footer-right a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 6px;
+    }
+
+    .footer-right a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="MEGAKNIGHT">
+    <div class="logotip">A1 Construction</div>
+    <nav class="main">
+      <a href="https://ru.wikipedia.org/wiki/Категория:Строительные_компании_по_странам">Главная</a>
+      <a href="https://www.instagram.com/bravobuild.kg/">О компании</a>
+      <a href="https://elitka.kg/builder/bravo-build">Контакты</a>
+      <button class="admin-btn">Админ панель</button>
+    </nav>
+  </header>
+
+  <main class="Dream">
+    <section class="contact-form">
+      <h1>Оставьте сообщение</h1>
+      <p class="subtitle">We will definitely answer you!</p>
+
+      <form>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Name!</label>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="input-group">
+            <label>Lastname!</label>
+            <input type="text" placeholder="lastname" />
+          </div>
+        </div>
+
+        <div class="input-group" style="max-width: 460px;">
+          <label>Email!</label>
+          <input type="email" placeholder="email" />
+        </div>
+
+        <div class="input-group" style="max-width: 460px;">
+          <label>Your message!</label>
+          <textarea placeholder="type your message !"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </section>
+
+    <section class="image-section">
+      <img src="https://elitka.kg/images/builder/648d35afad61a_648d35afab3d5.jpg" alt="Construction building" />
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>A1 Construction</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/p/Bravo-Build-100052802119271/"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/company/bravo-building-services"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/channel/UCnvkRrYqR0qw1_EAGg9QVbg"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="https://www.instagram.com/bravobuild.kg/"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <a href="https://ru.wikipedia.org/wiki/Категория:Строительные_компании_по_странам">Главная</a>
+      <a href="https://www.instagram.com/bravobuild.kg/">Контакты</a>
+      <a href="https://elitka.kg/builder/bravo-build">О компании</a>
+      <a href="">Админ панель</a>
+    </div>
+  </footer>
+</body>
+</html>
